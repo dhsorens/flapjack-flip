@@ -1,0 +1,19 @@
+// A function returning a pair.
+fun {1,1} divmod10(1 x) {
+  var 1 q = 0;
+  var 1 r = x;
+  while r >=+ 10 {
+    r = r - 10;
+    q = q + 1;
+  }
+  return <q, r>;
+}
+fun 1 main() {
+  @read(0, 0, @base, 2);
+  var 1 x = (ld8 @base) + ((ld8 (@base + 1)) << 8);
+  var {1,1} p = divmod10(x);
+  st @base, p.0;
+  st @base + 8, p.1;
+  @write(0, 0, @base, 16);
+  return 0;
+}

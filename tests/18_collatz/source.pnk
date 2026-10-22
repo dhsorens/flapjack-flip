@@ -1,0 +1,17 @@
+// Collatz steps from an input, capped at 1000.
+fun 1 main() {
+  @read(0, 0, @base, 2);
+  var 1 x = (ld8 @base) + ((ld8 (@base + 1)) << 8) + 1;
+  var 1 steps = 0;
+  while (x != 1) && (steps < 1000) {
+    if (x & 1) == 1 {
+      x = 3 * x + 1;
+    } else {
+      x = x >>> 1;
+    }
+    steps = steps + 1;
+  }
+  st @base, steps;
+  @write(0, 0, @base, 8);
+  return 0;
+}

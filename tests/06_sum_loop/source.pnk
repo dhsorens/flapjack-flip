@@ -1,0 +1,14 @@
+// Sum 1 + 2 + ... + n, with n an input byte.
+fun 1 main() {
+  @read(0, 0, @base, 1);
+  var 1 n = ld8 @base;
+  var 1 i = 1;
+  var 1 acc = 0;
+  while i <= n {
+    acc = acc + i;
+    i = i + 1;
+  }
+  st @base, acc;
+  @write(0, 0, @base, 8);
+  return 0;
+}

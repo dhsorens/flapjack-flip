@@ -1,0 +1,16 @@
+// Linear search with an early return, reporting the index found.
+fun 1 find(1 p, 1 n, 1 key) {
+  var 1 i = 0;
+  while i < n {
+    if ld8 (p + i) == key { return i; }
+    i = i + 1;
+  }
+  return n;
+}
+fun 1 main() {
+  @read(0, 0, @base, 33);
+  var 1 k = find(@base + 1, 32, ld8 @base);
+  st @base, k;
+  @write(0, 0, @base, 8);
+  return 0;
+}

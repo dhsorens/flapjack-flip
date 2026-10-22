@@ -1,0 +1,40 @@
+// generated: seed 0, program 54
+fun 1 main() {
+  @in(0, 0, @base, 64);
+  var 1 v0 = lds 1 (@base + 0);
+  var 1 v1 = lds 1 (@base + 8);
+  var 1 v2 = lds 1 (@base + 16);
+  var 1 v3 = lds 1 (@base + 24);
+  if (8 < ((v2 | v2) | v1)) {
+    st @base + 512, ((v0 >= v2) + v3);
+    @out(0, 0, @base + 512, 8);
+    v1 = (v3 + ((v3 >>> 1) <= 6));
+    st @base + 512, ((v2 * v0) - (v2 - v1));
+    @out(0, 0, @base + 512, 8);
+  } else {
+    v0 = v0;
+  }
+  st @base + 512, 19734;
+  @out(0, 0, @base + 512, 8);
+  v1 = ((49405 ^ 31924) + v2);
+  if ((ld8 (@base + 49)) >=+ ((v0 << 58) - (v3 != v3))) {
+    st @base + 512, ((v2 + v2) == (v0 - 29115));
+    @out(0, 0, @base + 512, 8);
+  } else {
+    v3 = v2;
+    if (v2 <= ((5 ^ 3) & (v3 & 9))) {
+      st @base + 512, ((v1 & v1) & (v3 | v1));
+      @out(0, 0, @base + 512, 8);
+      v3 = (((v2 * v0) >> 19) - (v1 < (6 - v3)));
+      v2 = (((ld8 (@base + 12)) | v1) * ((v0 & v2) <+ (54397 * v1)));
+    }
+    st @base + 512, ((v1 <+ v3) != (v0 >+ 12277));
+    @out(0, 0, @base + 512, 8);
+  }
+  st @base + 512, v0;
+  st @base + 520, v1;
+  st @base + 528, v2;
+  st @base + 536, v3;
+  @out(0, 0, @base + 512, 32);
+  return 0;
+}

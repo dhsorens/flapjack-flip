@@ -1,0 +1,42 @@
+// generated: seed 0, program 40
+fun 1 f0(1 p0, 1 p1, 1 p2) {
+  var 1 t = p0;
+  p1 = (((p1 <+ 16954) ^ (ld8 (@base + 24))) + ((ld8 (@base + 21)) | (ld8 (@base + 46))));
+  st @base + 512, ((p2 & t) | (p0 | p1));
+  @out(0, 0, @base + 512, 8);
+  p1 = (t - t);
+  return ((ld8 (@base + 60)) >> 20);
+}
+
+fun 1 f1(1 p0) {
+  var 1 t = p0;
+  t = p0;
+  return ((t >>> 54) - 4684);
+}
+
+fun 1 main() {
+  @in(0, 0, @base, 64);
+  var 1 v0 = lds 1 (@base + 0);
+  var 1 v1 = lds 1 (@base + 8);
+  var 1 v2 = lds 1 (@base + 16);
+  var 1 v3 = lds 1 (@base + 24);
+  var 1 i0 = 0;
+  while i0 < 7 {
+    v1 = (((v2 - v0) & 12) << 26);
+    i0 = i0 + 1;
+  }
+  if (v2 <+ v3) {
+    v2 = (((v3 * v3) & (v3 ^ v0)) >+ ((v3 * v3) ^ (v3 >=+ 3)));
+  } else {
+    v3 = ((ld8 (@base + 18)) << 22);
+    v0 = v1;
+  }
+  v0 = (((6491 >+ v2) | v2) - v2);
+  v3 = 1225461425918500270;
+  st @base + 512, v0;
+  st @base + 520, v1;
+  st @base + 528, v2;
+  st @base + 536, v3;
+  @out(0, 0, @base + 512, 32);
+  return 0;
+}

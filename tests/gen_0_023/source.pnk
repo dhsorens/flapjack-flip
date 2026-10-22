@@ -1,0 +1,82 @@
+// generated: seed 0, program 23
+fun 1 f0(1 p0, 1 p1) {
+  var 1 t = (ld8 (@base + 0));
+  if (((t | 0) >= (t ^ p0)) >=+ ((p1 + p1) & (t + 14))) {
+    st @base + 512, (p1 + (t + t));
+    @out(0, 0, @base + 512, 8);
+    st @base + 512, ((8 << 41) != (p0 >= p1));
+    @out(0, 0, @base + 512, 8);
+  } else {
+    st @base + 512, t;
+    @out(0, 0, @base + 512, 8);
+    t = (((p0 ^ t) & (p1 != 8)) + ((p1 >+ t) - (t - 10)));
+    t = t;
+  }
+  var 1 i0 = 0;
+  while i0 < 1 {
+    p1 = (((4 ^ p0) < i0) & ((27206 >> 56) * (i0 >> 3)));
+    st @base + 512, 55981;
+    @out(0, 0, @base + 512, 8);
+    i0 = i0 + 1;
+  }
+  p1 = p1;
+  return ((t | 6) - (p1 >>> 32));
+}
+
+fun 1 f1(1 p0, 1 p1, 1 p2) {
+  var 1 t = p0;
+  st @base + 512, ((t & t) & 12);
+  @out(0, 0, @base + 512, 8);
+  var 1 i0 = 0;
+  while i0 < 3 {
+    st @base + 512, (ld8 (@base + 34));
+    @out(0, 0, @base + 512, 8);
+    @in(0, 0, @base + 520, 8);
+    p1 = lds 1 (@base + 520);
+    st @base + 512, i0;
+    @out(0, 0, @base + 512, 8);
+    i0 = i0 + 1;
+  }
+  st @base + 512, p2;
+  @out(0, 0, @base + 512, 8);
+  return (t - (p1 | 2654969035666091550));
+}
+
+fun 1 main() {
+  @in(0, 0, @base, 64);
+  var 1 v0 = lds 1 (@base + 0);
+  var 1 v1 = lds 1 (@base + 8);
+  var 1 v2 = lds 1 (@base + 16);
+  var 1 v3 = lds 1 (@base + 24);
+  var 1 i0 = 0;
+  while i0 < 7 {
+    v2 = v2;
+    v3 = (v3 >>> 62);
+    i0 = i0 + 1;
+  }
+  st @base + 512, ((1 - v0) * (v3 + 14));
+  @out(0, 0, @base + 512, 8);
+  if (44031 >+ 0) {
+    if (((v0 | 7) != v1) <+ 8) {
+      v3 = f1((6121004247704014553 <+ (v2 + v2)), (v2 >> 41), (v1 | (v0 <+ v3)));
+      v3 = f0(v2, ((7 < v1) & (v0 | v2)));
+      v3 = (v2 * ((v3 >>> 17) ^ (v0 >+ 6775616239840339375)));
+    }
+  }
+  if (((15 * v1) + (12 >> 18)) <+ ((v3 | v2) + v1)) {
+    v2 = 8;
+  } else {
+    if (((v3 | 5) << 57) >= ((ld8 (@base + 45)) - (v0 ^ 3))) {
+      v0 = (v3 * v0);
+      v3 = f0((v3 * v3), ((v0 + v1) < v2));
+    }
+    v2 = f1(v2, (v3 ^ (v1 - v3)), v3);
+  }
+  v0 = (((0 >+ v1) | (v2 & v2)) - v2);
+  st @base + 512, v0;
+  st @base + 520, v1;
+  st @base + 528, v2;
+  st @base + 536, v3;
+  @out(0, 0, @base + 512, 32);
+  return 0;
+}

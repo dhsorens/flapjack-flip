@@ -1,0 +1,28 @@
+// generated: seed 0, program 87
+fun 1 main() {
+  @in(0, 0, @base, 64);
+  var 1 v0 = lds 1 (@base + 0);
+  var 1 v1 = lds 1 (@base + 8);
+  var 1 v2 = lds 1 (@base + 16);
+  var 1 v3 = lds 1 (@base + 24);
+  v3 = v3;
+  st @base + 512, (v2 << 21);
+  @out(0, 0, @base + 512, 8);
+  if (v3 >=+ ((v3 * 12) >= (v3 | v2))) {
+    if (v1 <= ((5924056403381235702 + v3) ^ v0)) {
+      @in(0, 0, @base + 520, 8);
+      v3 = lds 1 (@base + 520);
+      v1 = (((v3 * v0) | (v1 + v1)) >>> 61);
+    } else {
+      v0 = (((v2 ^ v3) - (v0 + 9)) & (ld8 (@base + 54)));
+      st @base + 512, ((v1 - v0) >> 57);
+      @out(0, 0, @base + 512, 8);
+    }
+  }
+  st @base + 512, v0;
+  st @base + 520, v1;
+  st @base + 528, v2;
+  st @base + 536, v3;
+  @out(0, 0, @base + 512, 32);
+  return 0;
+}

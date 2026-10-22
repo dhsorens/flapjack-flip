@@ -1,0 +1,16 @@
+// Signed and unsigned comparisons, each producing 0 or 1.
+fun 1 main() {
+  @read(0, 0, @base, 16);
+  var 1 a = lds 1 @base;
+  var 1 b = lds 1 (@base + 8);
+  st8 @base, a < b;
+  st8 @base + 1, a <+ b;
+  st8 @base + 2, a >= b;
+  st8 @base + 3, a >=+ b;
+  st8 @base + 4, a == b;
+  st8 @base + 5, a != b;
+  st8 @base + 6, a <= b;
+  st8 @base + 7, a >+ b;
+  @write(0, 0, @base, 8);
+  return 0;
+}

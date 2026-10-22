@@ -1,0 +1,14 @@
+// Arithmetic and bitwise operators on two input words.
+fun 1 main() {
+  @read(0, 0, @base, 16);
+  var 1 a = lds 1 @base;
+  var 1 b = lds 1 (@base + 8);
+  st @base, a + b;
+  st @base + 8, a - b;
+  st @base + 16, a * b;
+  st @base + 24, a & b;
+  st @base + 32, a | b;
+  st @base + 40, a ^ b;
+  @write(0, 0, @base, 48);
+  return 0;
+}

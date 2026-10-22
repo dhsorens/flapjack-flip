@@ -1,0 +1,10 @@
+// Write the five bytes "Hello" through the FFI `write`.
+fun 1 main() {
+  st8 @base, 72;
+  st8 @base + 1, 101;
+  st8 @base + 2, 108;
+  st8 @base + 3, 108;
+  st8 @base + 4, 111;
+  @write(0, 0, @base, 5);
+  return 0;
+}

@@ -1,0 +1,20 @@
+// Global variables updated by a helper.
+var 1 count = 0;
+var 1 total = 7;
+fun 1 add(1 x) {
+  count = count + 1;
+  total = total + x;
+  return 0;
+}
+fun 1 main() {
+  @read(0, 0, @base, 4);
+  var 1 i = 0;
+  while i < 4 {
+    var 1 z = add(ld8 (@base + i));
+    i = i + 1;
+  }
+  st @base, count;
+  st @base + 8, total;
+  @write(0, 0, @base, 16);
+  return 0;
+}

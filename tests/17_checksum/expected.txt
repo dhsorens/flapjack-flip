@@ -1,0 +1,144 @@
+## input 
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@write conf= in=0000 out=0000
+halted: success
+(890 steps)
+
+## input 6c82a562cb808d10d632be89c8513ebf
+@read conf= in=00 out=6c
+@read conf= in=6c out=82
+@read conf= in=82 out=a5
+@read conf= in=a5 out=62
+@read conf= in=62 out=cb
+@read conf= in=cb out=80
+@read conf= in=80 out=8d
+@read conf= in=8d out=10
+@read conf= in=10 out=d6
+@read conf= in=d6 out=32
+@read conf= in=32 out=be
+@read conf= in=be out=89
+@read conf= in=89 out=c8
+@read conf= in=c8 out=51
+@read conf= in=51 out=3e
+@read conf= in=3e out=bf
+@read conf= in=bf out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@read conf= in=00 out=00
+@write conf= in=4201 out=0000
+halted: success
+(890 steps)
+
+## input c4eab05d357007c632f3dbb48489924d552b08fe0c353a0d4a1f00acda2c463afbea67c5e8d2877c5e3bc397a659949ef8021e954e0a12274eb622b08d73211b
+@read conf= in=00 out=c4
+@read conf= in=c4 out=ea
+@read conf= in=ea out=b0
+@read conf= in=b0 out=5d
+@read conf= in=5d out=35
+@read conf= in=35 out=70
+@read conf= in=70 out=07
+@read conf= in=07 out=c6
+@read conf= in=c6 out=32
+@read conf= in=32 out=f3
+@read conf= in=f3 out=db
+@read conf= in=db out=b4
+@read conf= in=b4 out=84
+@read conf= in=84 out=89
+@read conf= in=89 out=92
+@read conf= in=92 out=4d
+@read conf= in=4d out=55
+@read conf= in=55 out=2b
+@read conf= in=2b out=08
+@read conf= in=08 out=fe
+@read conf= in=fe out=0c
+@read conf= in=0c out=35
+@read conf= in=35 out=3a
+@read conf= in=3a out=0d
+@write conf= in=db81 out=4a1f
+halted: success
+(890 steps)
+
+## input 1c53bc589e61807b8db3f8e040c1e7da3fc471c93b70e87c31756a4bbe7544d0a448454a037509a983d38ad3b769faaeecd6c7e1fa138b56417d6e4dd343055fead9d2d1a340143eab3198bca6166d14acbf275b1214574156d1fbe0d02cc29f504c317889c436ab490ca1a461791d5b689f4c6508a5baa0e192676434de54fc9ba16e38c0f65ba63af01fb00d8d899b7ce9f5b0dfdbcbfe53b16c76623321a7ae640f47e840cc77212b7048e6633dde757523ab898d6d39a9a503791de1a7a295ef2793449fbe1b64fba23ecdceae9390cf9bbf9162d868ba2b6b6cd4b707fdd6b6435b3c5c0ceff637520608b49fc43d0500142ff06f94ce5b5521488c7947
+@read conf= in=00 out=1c
+@read conf= in=1c out=53
+@read conf= in=53 out=bc
+@read conf= in=bc out=58
+@read conf= in=58 out=9e
+@read conf= in=9e out=61
+@read conf= in=61 out=80
+@read conf= in=80 out=7b
+@read conf= in=7b out=8d
+@read conf= in=8d out=b3
+@read conf= in=b3 out=f8
+@read conf= in=f8 out=e0
+@read conf= in=e0 out=40
+@read conf= in=40 out=c1
+@read conf= in=c1 out=e7
+@read conf= in=e7 out=da
+@read conf= in=da out=3f
+@read conf= in=3f out=c4
+@read conf= in=c4 out=71
+@read conf= in=71 out=c9
+@read conf= in=c9 out=3b
+@read conf= in=3b out=70
+@read conf= in=70 out=e8
+@read conf= in=e8 out=7c
+@write conf= in=a3d2 out=3175
+halted: success
+(890 steps)
+
+## input ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+@read conf= in=00 out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@read conf= in=ff out=ff
+@write conf= in=e8d4 out=ffff
+halted: success
+(890 steps)

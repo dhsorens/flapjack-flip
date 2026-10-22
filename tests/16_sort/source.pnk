@@ -1,0 +1,20 @@
+// Bubble sort of 16 input bytes.
+fun 1 main() {
+  @read(0, 0, @base, 16);
+  var 1 i = 0;
+  while i < 16 {
+    var 1 j = 0;
+    while j < 15 - i {
+      var 1 a = ld8 (@base + j);
+      var 1 b = ld8 (@base + j + 1);
+      if b < a {
+        st8 @base + j, b;
+        st8 @base + j + 1, a;
+      }
+      j = j + 1;
+    }
+    i = i + 1;
+  }
+  @write(0, 0, @base, 16);
+  return 0;
+}

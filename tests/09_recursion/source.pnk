@@ -1,0 +1,15 @@
+// Naive recursive Fibonacci of a small input.
+fun 1 fib(1 n) {
+  if n < 2 { return n; }
+  var 1 a = fib(n - 1);
+  var 1 b = fib(n - 2);
+  return a + b;
+}
+fun 1 main() {
+  @read(0, 0, @base, 1);
+  var 1 n = (ld8 @base) & 15;
+  var 1 r = fib(n);
+  st @base, r;
+  @write(0, 0, @base, 8);
+  return 0;
+}

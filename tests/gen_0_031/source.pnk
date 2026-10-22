@@ -1,0 +1,26 @@
+// generated: seed 0, program 31
+fun 1 f0(1 p0, 1 p1, 1 p2) {
+  var 1 t = (((p1 & 9) & (p2 & p2)) | p1);
+  t = 8;
+  t = (t >> 41);
+  p1 = p0;
+  return p0;
+}
+
+fun 1 main() {
+  @in(0, 0, @base, 64);
+  var 1 v0 = lds 1 (@base + 0);
+  var 1 v1 = lds 1 (@base + 8);
+  var 1 v2 = lds 1 (@base + 16);
+  var 1 v3 = lds 1 (@base + 24);
+  v1 = f0(((21106 & v3) >=+ (v1 - v2)), v2, (v0 * (v3 >= v1)));
+  v3 = (v3 + (v1 >>> 30));
+  v0 = f0(((v2 | v0) ^ v0), ((65283 | v0) ^ 64758), (v1 + (v0 ^ v2)));
+  v0 = f0(v2, ((v0 ^ v0) ^ v1), v1);
+  st @base + 512, v0;
+  st @base + 520, v1;
+  st @base + 528, v2;
+  st @base + 536, v3;
+  @out(0, 0, @base + 512, 32);
+  return 0;
+}

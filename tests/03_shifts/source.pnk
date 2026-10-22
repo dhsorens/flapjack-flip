@@ -1,0 +1,11 @@
+// The four shift operators, by constant amounts.
+fun 1 main() {
+  @read(0, 0, @base, 8);
+  var 1 a = lds 1 @base;
+  st @base, a << 3;
+  st @base + 8, a >>> 5;
+  st @base + 16, a >> 7;
+  st @base + 24, a #>> 13;
+  @write(0, 0, @base, 32);
+  return 0;
+}

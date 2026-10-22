@@ -1,0 +1,63 @@
+// generated: seed 0, program 67
+fun 1 main() {
+  @in(0, 0, @base, 64);
+  var 1 v0 = lds 1 (@base + 0);
+  var 1 v1 = lds 1 (@base + 8);
+  var 1 v2 = lds 1 (@base + 16);
+  var 1 v3 = lds 1 (@base + 24);
+  var 1 i0 = 0;
+  while i0 < 2 {
+    if (v2 >= 3922814017170911940) {
+      st @base + 512, v2;
+      @out(0, 0, @base + 512, 8);
+      st @base + 512, v2;
+      @out(0, 0, @base + 512, 8);
+      v0 = i0;
+    }
+    v2 = (((v0 ^ v2) <+ v1) >+ v1);
+    i0 = i0 + 1;
+  }
+  v1 = ((v3 >> 54) ^ v2);
+  v2 = ((ld8 (@base + 44)) & (8 - 7639224059606292141));
+  if (v3 < v0) {
+    v0 = (ld8 (@base + 62));
+    if (11 >= ((v0 ^ v0) ^ v2)) {
+      st @base + 512, (ld8 (@base + 30));
+      @out(0, 0, @base + 512, 8);
+      v0 = (((1960781098439888829 & v3) >>> 47) & v3);
+    } else {
+      st @base + 512, v2;
+      @out(0, 0, @base + 512, 8);
+      st @base + 512, ((v1 << 33) + v0);
+      @out(0, 0, @base + 512, 8);
+      v2 = (((v3 | v3) | (v1 * v2)) + (4577152618644831433 < (v3 * 9)));
+    }
+  } else {
+    st @base + 512, v2;
+    @out(0, 0, @base + 512, 8);
+    var 1 i0 = 0;
+    while i0 < 7 {
+      st @base + 512, ((ld8 (@base + 58)) & (v2 + 8));
+      @out(0, 0, @base + 512, 8);
+      v3 = (9 & ((3 - v0) - (v1 >> 33)));
+      st @base + 512, v1;
+      @out(0, 0, @base + 512, 8);
+      i0 = i0 + 1;
+    }
+  }
+  if (((10483 != v2) == (v3 * v0)) >=+ ((v0 + v3) - (v3 - v3))) {
+    if ((v2 | v3) <+ ((2 ^ v0) - v3)) {
+      st @base + 512, ((v0 | 15) << 43);
+      @out(0, 0, @base + 512, 8);
+    }
+    st @base + 512, (ld8 (@base + 51));
+    @out(0, 0, @base + 512, 8);
+  }
+  v3 = ((1 <= (v2 << 24)) - (v1 | (v3 << 7)));
+  st @base + 512, v0;
+  st @base + 520, v1;
+  st @base + 528, v2;
+  st @base + 536, v3;
+  @out(0, 0, @base + 512, 32);
+  return 0;
+}

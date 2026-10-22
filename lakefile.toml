@@ -1,0 +1,34 @@
+name = "FlapjackFlip"
+version = "0.1.0"
+defaultTargets = ["FlapjackFlip", "Acceptance", "flapjack-flip", "flip-check"]
+
+# The verified Pancake compiler. Supplies the parser, the native RISC-V compiler
+# (`RiscV.NativeSource.compile`), and its correctness theorem. Pinned by sha:
+# Flapjack has no release tags.
+[[require]]
+name = "Flapjack"
+git = "https://github.com/pirapira/flapjack"
+rev = "95aa081de997752ac3806cd1c3f3ba5f42df2c49"
+
+# The RISC-V machine the binaries run on: `RiscvZkvm.Rv64.step` is the
+# semantics of an instruction everywhere in this project. Pinned by sha: main
+# is on Lean 4.33.1, the last published tag (v0.3.1) is on 4.33.0.
+[[require]]
+name = "riscv-zkvm"
+git = "https://github.com/Verified-zkEVM/riscv-zkvm"
+rev = "6810fc14d9c40373101321cefaec59df8d82e3e7"
+
+[[lean_lib]]
+name = "FlapjackFlip"
+
+# The acceptance theorem (PROMPT.md, criterion 2).
+[[lean_lib]]
+name = "Acceptance"
+
+[[lean_exe]]
+name = "flapjack-flip"
+root = "Main"
+
+[[lean_exe]]
+name = "flip-check"
+root = "Check"

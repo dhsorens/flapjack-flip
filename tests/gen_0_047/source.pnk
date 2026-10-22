@@ -1,0 +1,71 @@
+// generated: seed 0, program 47
+fun 1 main() {
+  @in(0, 0, @base, 64);
+  var 1 v0 = lds 1 (@base + 0);
+  var 1 v1 = lds 1 (@base + 8);
+  var 1 v2 = lds 1 (@base + 16);
+  var 1 v3 = lds 1 (@base + 24);
+  var 1 i0 = 0;
+  while i0 < 7 {
+    v1 = (((v1 >=+ v1) + (v0 * i0)) != ((i0 & i0) << 32));
+    i0 = i0 + 1;
+  }
+  var 1 i0 = 0;
+  while i0 < 1 {
+    if (((ld8 (@base + 21)) | (8974457415446422590 >> 37)) <= ((ld8 (@base + 32)) <+ (v1 & v1))) {
+      v0 = (v1 <+ v3);
+      st @base + 512, ((ld8 (@base + 9)) & (10 + 344656275681443483));
+      @out(0, 0, @base + 512, 8);
+    }
+    i0 = i0 + 1;
+  }
+  if (v2 >= ((v1 - v1) & (v2 & v0))) {
+    if (((v2 & v1) * (3 & v3)) >= ((2 >> 21) + (v1 - v3))) {
+      st @base + 512, ((v2 | 0) >>> 52);
+      @out(0, 0, @base + 512, 8);
+    } else {
+      v2 = v3;
+    }
+  } else {
+    v1 = (((v2 - v1) & 11) ^ (v1 * (v1 >> 48)));
+    if ((32152 >>> 39) == (ld8 (@base + 26))) {
+      @in(0, 0, @base + 520, 8);
+      v1 = lds 1 (@base + 520);
+    }
+    if (((v2 * v1) + (v3 >+ v2)) >+ ((v0 * 4) < (v2 + v1))) {
+      st @base + 512, ((13 << 47) << 56);
+      @out(0, 0, @base + 512, 8);
+      st @base + 512, (ld8 (@base + 20));
+      @out(0, 0, @base + 512, 8);
+    } else {
+      v3 = (((34412 - v3) - v3) ^ 44585);
+    }
+  }
+  if (((v2 >= 5) * (7757 & v2)) >=+ v2) {
+    if (((v1 ^ v3) + (2 ^ v0)) < 26726) {
+      @in(0, 0, @base + 520, 8);
+      v0 = lds 1 (@base + 520);
+      st @base + 512, v0;
+      @out(0, 0, @base + 512, 8);
+      @in(0, 0, @base + 520, 8);
+      v3 = lds 1 (@base + 520);
+    } else {
+      st @base + 512, (ld8 (@base + 27));
+      @out(0, 0, @base + 512, 8);
+      v2 = v1;
+      v2 = (((31141 != v2) + (v0 | v2)) - ((v3 * v0) + v2));
+    }
+  } else {
+    var 1 i0 = 0;
+    while i0 < 3 {
+      v3 = ((4 | (v2 >>> 4)) | ((15 >+ v0) + (ld8 (@base + 47))));
+      i0 = i0 + 1;
+    }
+  }
+  st @base + 512, v0;
+  st @base + 520, v1;
+  st @base + 528, v2;
+  st @base + 536, v3;
+  @out(0, 0, @base + 512, 32);
+  return 0;
+}

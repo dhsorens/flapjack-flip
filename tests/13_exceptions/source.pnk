@@ -1,0 +1,21 @@
+// Exceptions thrown from a callee and caught by the caller.
+exception Odd : 1;
+fun 1 half(1 x) {
+  if (x & 1) == 1 { throw Odd x; }
+  return x >>> 1;
+}
+fun 1 main() {
+  @read(0, 0, @base, 1);
+  var 1 x = ld8 @base;
+  var 1 r = 0;
+  try
+    r = half(x)
+  catch Odd => r {
+    st8 @base, r;
+    @odd(0, 0, @base, 1);
+    r = 0;
+  }
+  st @base, r;
+  @write(0, 0, @base, 8);
+  return 0;
+}

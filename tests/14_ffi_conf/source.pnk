@@ -1,0 +1,11 @@
+// Several FFI names, with data passed through the configuration bytes too.
+fun 1 main() {
+  @read(0, 0, @base, 4);
+  st8 @base + 8, 1;
+  st8 @base + 9, 2;
+  @tag(@base + 8, 2, @base, 4);
+  @read(0, 0, @base + 16, 4);
+  @log(@base, 4, @base + 16, 4);
+  @write(@base + 16, 4, 0, 0);
+  return 0;
+}

@@ -1,0 +1,12 @@
+// Loads and stores of several widths.
+fun 1 main() {
+  @read(0, 0, @base, 8);
+  var 1 a = lds 1 @base;
+  st8 @base + 8, a;
+  st @base + 16, a;
+  var 1 b = ld8 (@base + 3);
+  var 1 w = ld32 (@base + 4);
+  st @base + 24, b + w;
+  @write(0, 0, @base + 8, 24);
+  return 0;
+}

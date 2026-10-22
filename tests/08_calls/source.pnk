@@ -1,0 +1,16 @@
+// Functions with several arguments.
+fun 1 mix(1 a, 1 b, 1 c) {
+  return (a * 31) ^ (b + c);
+}
+fun 1 twice(1 x) {
+  var 1 y = mix(x, x, 1);
+  return mix(y, x, 2);
+}
+fun 1 main() {
+  @read(0, 0, @base, 8);
+  var 1 a = lds 1 @base;
+  var 1 r = twice(a);
+  st @base, r;
+  @write(0, 0, @base, 8);
+  return 0;
+}

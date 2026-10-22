@@ -1,0 +1,73 @@
+// generated: seed 0, program 52
+fun 1 f0(1 p0, 1 p1) {
+  var 1 t = ((0 != (p1 - p0)) >>> 24);
+  var 1 i0 = 0;
+  while i0 < 8 {
+    p1 = (p1 + (15 ^ (ld8 (@base + 25))));
+    t = (ld8 (@base + 50));
+    st @base + 512, 8492427768373665294;
+    @out(0, 0, @base + 512, 8);
+    i0 = i0 + 1;
+  }
+  var 1 i0 = 0;
+  while i0 < 8 {
+    p0 = p1;
+    st @base + 512, (p1 - 10738);
+    @out(0, 0, @base + 512, 8);
+    i0 = i0 + 1;
+  }
+  if (((11 <+ 6) >=+ (p1 >>> 19)) <+ ((16763 - t) & (p0 & p0))) {
+    @in(0, 0, @base + 520, 8);
+    p0 = lds 1 (@base + 520);
+    p1 = (((t - 43303) >>> 44) >>> 7);
+    st @base + 512, (p0 - (p1 | p0));
+    @out(0, 0, @base + 512, 8);
+  }
+  return 6231163593291201205;
+}
+
+fun 1 f1(1 p0, 1 p1, 1 p2) {
+  var 1 t = 9;
+  var 1 i0 = 0;
+  while i0 < 3 {
+    st @base + 512, p2;
+    @out(0, 0, @base + 512, 8);
+    p0 = p1;
+    i0 = i0 + 1;
+  }
+  p2 = (((p2 ^ p1) ^ (t >=+ p0)) >>> 43);
+  @in(0, 0, @base + 520, 8);
+  p0 = lds 1 (@base + 520);
+  return ((p0 != 23781) << 58);
+}
+
+fun 1 main() {
+  @in(0, 0, @base, 64);
+  var 1 v0 = lds 1 (@base + 0);
+  var 1 v1 = lds 1 (@base + 8);
+  var 1 v2 = lds 1 (@base + 16);
+  var 1 v3 = lds 1 (@base + 24);
+  var 1 i0 = 0;
+  while i0 < 8 {
+    if (((v0 * v3) & (v0 & v2)) <= (v1 * v3)) {
+      @in(0, 0, @base + 520, 8);
+      v3 = lds 1 (@base + 520);
+    } else {
+      v2 = f1((ld8 (@base + 41)), ((v0 * v1) * (v1 >> 20)), ((ld8 (@base + 29)) >> 38));
+      v1 = 2;
+    }
+    i0 = i0 + 1;
+  }
+  st @base + 512, ((v1 & v2) & v0);
+  @out(0, 0, @base + 512, 8);
+  st @base + 512, ((v3 * v1) + v1);
+  @out(0, 0, @base + 512, 8);
+  @in(0, 0, @base + 520, 8);
+  v0 = lds 1 (@base + 520);
+  st @base + 512, v0;
+  st @base + 520, v1;
+  st @base + 528, v2;
+  st @base + 536, v3;
+  @out(0, 0, @base + 512, 32);
+  return 0;
+}

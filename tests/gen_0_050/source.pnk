@@ -1,0 +1,35 @@
+// generated: seed 0, program 50
+fun 1 f0(1 p0, 1 p1) {
+  var 1 t = (((p0 ^ 10766) - (3625 + p1)) ^ (p1 != (p0 | p1)));
+  var 1 i0 = 0;
+  while i0 < 7 {
+    p1 = ((p0 | (t >+ p0)) + ((p0 | p0) + 15));
+    i0 = i0 + 1;
+  }
+  p0 = ((ld8 (@base + 55)) <= (ld8 (@base + 59)));
+  if ((p0 << 58) >=+ ((p1 + p1) * (t * p1))) {
+    p0 = p0;
+  }
+  return t;
+}
+
+fun 1 main() {
+  @in(0, 0, @base, 64);
+  var 1 v0 = lds 1 (@base + 0);
+  var 1 v1 = lds 1 (@base + 8);
+  var 1 v2 = lds 1 (@base + 16);
+  var 1 v3 = lds 1 (@base + 24);
+  v3 = v3;
+  st @base + 512, v0;
+  @out(0, 0, @base + 512, 8);
+  if (((v1 ^ v0) >>> 63) == ((v1 + v3) & (v1 ^ v3))) {
+    v0 = (((v2 + v0) + (ld8 (@base + 9))) >> 29);
+  }
+  v3 = (((v2 + v0) << 39) >=+ (v1 + (ld8 (@base + 15))));
+  st @base + 512, v0;
+  st @base + 520, v1;
+  st @base + 528, v2;
+  st @base + 536, v3;
+  @out(0, 0, @base + 512, 32);
+  return 0;
+}

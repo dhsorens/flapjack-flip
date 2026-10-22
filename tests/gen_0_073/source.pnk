@@ -1,0 +1,36 @@
+// generated: seed 0, program 73
+fun 1 main() {
+  @in(0, 0, @base, 64);
+  var 1 v0 = lds 1 (@base + 0);
+  var 1 v1 = lds 1 (@base + 8);
+  var 1 v2 = lds 1 (@base + 16);
+  var 1 v3 = lds 1 (@base + 24);
+  @in(0, 0, @base + 520, 8);
+  v2 = lds 1 (@base + 520);
+  if ((15 | v0) < v1) {
+    st @base + 512, v0;
+    @out(0, 0, @base + 512, 8);
+    st @base + 512, ((v3 >= v3) * 2075822997359728864);
+    @out(0, 0, @base + 512, 8);
+    if (((v0 == v2) - (v0 >> 42)) >= (v0 * v0)) {
+      st @base + 512, ((v3 * v2) >>> 41);
+      @out(0, 0, @base + 512, 8);
+      v2 = v3;
+    }
+  }
+  var 1 i0 = 0;
+  while i0 < 1 {
+    v3 = ((ld8 (@base + 41)) >> 49);
+    st @base + 512, i0;
+    @out(0, 0, @base + 512, 8);
+    i0 = i0 + 1;
+  }
+  st @base + 512, ((1 >>> 51) & (v2 * v2));
+  @out(0, 0, @base + 512, 8);
+  st @base + 512, v0;
+  st @base + 520, v1;
+  st @base + 528, v2;
+  st @base + 536, v3;
+  @out(0, 0, @base + 512, 32);
+  return 0;
+}
